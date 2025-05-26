@@ -1,0 +1,41 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": ["es2019", "dom"],
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@components/*": ["app/components/*"],
+      "@screens/*": ["app/screens/*"],
+      "@utils/*": ["app/utils/*"],
+      "@services/*": ["app/services/*"],
+      "@assets/*": ["app/assets/*"],
+      "@hooks/*": ["app/hooks/*"],
+      "@store/*": ["app/store/*"],
+      "@navigation/*": ["app/navigation/*"],
+      "@theme/*": ["app/theme/*"],
+      "@types/*": ["app/types/*"],
+      "@context/*": ["app/context/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "include": [
+    "app/**/*",
+    "index.js",
+    "__tests__/**/*"
+  ]
+}
